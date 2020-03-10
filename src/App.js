@@ -4,7 +4,11 @@ import seedColors from './seedColors';
 
 class App extends Component {
 	render() {
-		return <div></div>;
+		return (
+			<div>
+				<Pallette {...seedColors[4]} />
+			</div>
+		);
 	}
 }
 
