@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import NewPaletteForm from './NewPaletteForm';
 import PaletteList from './PaletteList';
 import Pallette from './Pallette';
 import SingleColorPalette from './SingleColorPalette';
@@ -14,6 +15,7 @@ class App extends Component {
 	render() {
 		return (
 			<Switch>
+				<Route exact path='/palette/new' render={() => <NewPaletteForm />} />
 				<Route
 					exact
 					path='/'
