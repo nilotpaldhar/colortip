@@ -105,14 +105,12 @@ class NewPaletteForm extends Component {
 		});
 	}
 
-	handleSubmit(newPaletteName) {
-		const newPalette = {
-			paletteName: newPaletteName,
-			id: newPaletteName.toLowerCase().replace(/ /g, '-'),
-			colors: this.state.colors
-		};
+	handleSubmit(newPalette) {
+		newPalette.id = newPalette.paletteName.toLowerCase().replace(/ /g, '-');
+		newPalette.colors = this.state.colors;
+		// Save palette
 		this.props.savePalette(newPalette);
-		// Rediract to home
+		// // Rediract to home
 		this.props.history.push('/');
 	}
 
