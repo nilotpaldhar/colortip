@@ -1,5 +1,3 @@
-import transitions from '@material-ui/core/styles/transitions';
-
 export default {
 	root: {
 		backgroundColor: 'white',
@@ -41,7 +39,6 @@ export default {
 		marginLeft: '0.5rem',
 		fontSize: '1.5rem'
 	},
-	delete: {},
 
 	deleteIcon: {
 		color: '#fff',
