@@ -1,3 +1,5 @@
+import sizes from './sizes';
+
 export default {
 	Navbar: {
 		height: '8vh',
@@ -15,6 +17,10 @@ export default {
 		display: 'flex',
 		alignItems: 'center',
 
+		[sizes.down('xs')]: {
+			display: 'none'
+		},
+
 		'& a': {
 			color: '#212121',
 			textDecoration: 'none'
@@ -29,6 +35,14 @@ export default {
 	slider: {
 		width: '340px',
 		marginLeft: '15px',
+
+		[sizes.down('md')]: {
+			width: '150px'
+		},
+
+		[sizes.down('xs')]: {
+			marginLeft: '5px'
+		},
 
 		'& .rc-slider-rail': {
 			height: '8px'
