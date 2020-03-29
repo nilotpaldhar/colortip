@@ -1,14 +1,22 @@
 import sizes from './sizes';
+import background from './bg.svg';
 
 export default {
 	root: {
 		backgroundColor: 'blue',
-		height: '100vh',
+		height: '100%',
 		display: 'flex',
 		alignItems: 'flex-start',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		backgroundColor: '#330055',
+		backgroundImage: `url(${background})`,
+		backgroundAttachment: 'fixed',
+		backgroundSize: 'contain'
 	},
-
+	heading: {
+		fontSize: '2rem',
+		fontWeight: '700'
+	},
 	container: {
 		width: '50%',
 		display: 'flex',
@@ -30,8 +38,14 @@ export default {
 		alignItems: 'center',
 		color: 'white',
 
-		'& a': {
-			color: '#fff'
+		'& a, button': {
+			color: '#fff',
+			textDecoration: 'none',
+			fontSize: '1rem',
+			transition: 'all .3s ease-in-out',
+			'&:hover': {
+				opacity: '0.9'
+			}
 		}
 	},
 
