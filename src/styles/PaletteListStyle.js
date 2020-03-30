@@ -2,9 +2,19 @@ import sizes from './sizes';
 import background from './bg.svg';
 
 export default {
+	'@global': {
+		'.fade-exit': {
+			opacity: '1'
+		},
+		'.fade-exit-active': {
+			opacity: '0',
+			transition: 'opacity 300ms ease-out'
+		}
+	},
 	root: {
 		backgroundColor: 'blue',
-		height: '100%',
+		minHeight: '100vh',
+		maxHeight: '100%',
 		display: 'flex',
 		alignItems: 'flex-start',
 		justifyContent: 'center',
