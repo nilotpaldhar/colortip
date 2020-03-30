@@ -12,10 +12,10 @@ export default {
 		}
 	},
 	colors: {
-		backgroundColor: '#dae1e4',
+		// backgroundColor: '#dae1e4',
 		height: '150px',
 		width: '100%',
-		borderRadius: '5px',
+		// borderRadius: '5px',
 		overflow: 'hidden'
 	},
 	miniColor: {
@@ -23,7 +23,7 @@ export default {
 		width: '20%',
 		display: 'inline-block',
 		margin: '0 auto',
-		marginBottom: '-4px'
+		marginBottom: '-6px'
 	},
 	title: {
 		display: 'flex',
