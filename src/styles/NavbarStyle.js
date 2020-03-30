@@ -36,7 +36,7 @@ export default {
 		width: '340px',
 		marginLeft: '15px',
 
-		[sizes.down('md')]: {
+		[sizes.down('sm')]: {
 			width: '150px'
 		},
 
